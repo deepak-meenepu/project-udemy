@@ -1,12 +1,9 @@
-import { EventEmitter, Injectable } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Recipe } from "./recipe.model";
 import { Ingredient } from "../shared/ingredient.model";
 import { ShoppingListService } from "../shopping-list/shopping-list.service";
 @Injectable()
 export class RecipeService{
-  recipeSelected = new EventEmitter<Recipe>();
-
-
   private recipes: Recipe[] = [
     new Recipe('Chicken Biriyani',
     'Hyderabadi chicken biryani is an aromatic, mouth watering and authentic Indian dish with succulent chicken in layers of fluffy rice, fragrant spices and fried onions',
